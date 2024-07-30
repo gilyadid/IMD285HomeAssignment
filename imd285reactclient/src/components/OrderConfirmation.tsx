@@ -1,12 +1,13 @@
 ﻿import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store';
 import { Product } from '../store/productsSlice';
+import { clearCart } from '../store/cartSlice';
 import './OrderConfirmation.css';
 
 interface OrderConfirmationProps {
     onBack: () => void;
-    onConfirm: () => void; // Add this line to include the new prop
+    onConfirm: () => void;
 }
 
 const OrderConfirmation: React.FC<OrderConfirmationProps> = ({ onBack, onConfirm }) => {
@@ -17,15 +18,33 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({ onBack, onConfirm
     const [showConfirmationMessage, setShowConfirmationMessage] = useState(false);
 
     const cartItems = useSelector((state: RootState) => state.cart.items);
+    const dispatch = useDispatch();
 
     const isFormValid = name && address && email;
 
-    const handleConfirm = () => {
+    const handleConfirm = async () => {
         if (isFormValid) {
-            setIsConfirmed(true);
-            setShowConfirmationMessage(true);
-            onConfirm(); // Call onConfirm when the order is confirmed
+            try {
+                const response = await fetch('http://localhost:3000/api/orders', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, address, email, items: cartItems })
+                });
+                if (response.ok) {
+                    setIsConfirmed(true);
+                    setShowConfirmationMessage(true);
+                } else {
+                    console.error('Order submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
         }
+    };
+
+    const handleThankYou = () => {
+        dispatch(clearCart());
+        onConfirm();
     };
 
     return (
@@ -67,7 +86,7 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({ onBack, onConfirm
                 {showConfirmationMessage ? (
                     <>
                         <p>ההזמנה אושרה!</p>
-                        <button onClick={onConfirm}>תודה</button>
+                        <button onClick={handleThankYou}>תודה</button>
                     </>
                 ) : (
                     <>
