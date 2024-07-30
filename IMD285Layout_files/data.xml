@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="Page-1" NameU="Page-1">
+			<PageProps>
+				<PageScale Unit="MM">0.039370078740157</PageScale>
+				<DrawingScale Unit="MM">0.039370078740157</DrawingScale>
+			</PageProps>
+			<Layer IX="0">
+				<Name>Connector</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{6965A7B7-8617-4ABD-A07B-7E4F60FC8258}" Name="Rectangle" NameU="Rectangle" Master="2">
+					<Text>React-Client (Frontend)</Text>
+					<XForm>
+						<PinX Unit="MM">4.552877964371515</PinX>
+						<PinY Unit="MM">1.310752096747192</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="2" UniqueID="{96CFDCD5-7751-4612-A7E8-3F19CBC0D0A5}" Name="Rectangle.2" NameU="Rectangle.2" Master="2">
+					<Text>Asp.Net Core (Backend Server) API for products and categories</Text>
+					<XForm>
+						<PinX Unit="MM">2.533464440233718</PinX>
+						<PinY Unit="MM">4.848798532394112</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="3" UniqueID="{F96E99DD-B292-4634-AD35-976A40978C9A}" Name="Dynamic connector" NameU="Dynamic connector" Master="4">
+					<Text>Fetch Categories/Products</Text>
+					<XForm>
+						<PinX Unit="MM">2.533464440233718</PinX>
+						<PinY Unit="MM">6.134163737639663</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="4" UniqueID="{5E985E39-13A1-490D-8165-FD72D426A4C7}" Name="Rectangle.4" NameU="Rectangle.4" Master="2">
+					<Text>NodeJs (Backend Server) API for orders</Text>
+					<XForm>
+						<PinX Unit="MM">6.864173110622172</PinX>
+						<PinY Unit="MM">4.848798532394114</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="5" UniqueID="{6CB6E6DD-8602-480C-8F1F-34BAEA7CDC19}" Name="Dynamic connector.5" NameU="Dynamic connector.5" Master="4">
+					<Text>Save Order details</Text>
+					<XForm>
+						<PinX Unit="MM">5.609251491317870</PinX>
+						<PinY Unit="MM">2.927810220105961</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="6" UniqueID="{B7E8DCC1-B0CB-4590-B588-A813767A6E0C}" Name="Can" NameU="Can" Master="5">
+					<Text>Elastic-Search</Text>
+					<XForm>
+						<PinX Unit="MM">6.864173110622173</PinX>
+						<PinY Unit="MM">7.115598685838339</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="8" UniqueID="{B863F192-089E-431C-9687-70143125C6BD}" Name="Can.8" NameU="Can.8" Master="5">
+					<Text>SQL Server</Text>
+					<XForm>
+						<PinX Unit="MM">2.533464440233718</PinX>
+						<PinY Unit="MM">7.115598685838339</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="10" UniqueID="{7826F423-EF51-4E7B-8FCD-5B5336EFC951}" Name="Dynamic connector.10" NameU="Dynamic connector.10" Master="4">
+					<Text>Fetch Categories/Products</Text>
+					<XForm>
+						<PinX Unit="MM">3.629908437819641</PinX>
+						<PinY Unit="MM">2.927810220105961</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="11" UniqueID="{EF85292D-366E-4E6F-AB27-58E64658324F}" Name="Dynamic connector.11" NameU="Dynamic connector.11" Master="4">
+					<Text>Save Order details</Text>
+					<XForm>
+						<PinX Unit="MM">6.864173110622172</PinX>
+						<PinY Unit="MM">6.134163737639664</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="12" UniqueID="{BED1070F-AB54-4258-97BC-281FC5F18780}" Name="Rectangle.12" NameU="Rectangle.12" Master="2">
+					<Text>Kibana (Backend Server) UI for Elastic-Search</Text>
+					<XForm>
+						<PinX Unit="MM">10.223425074232766</PinX>
+						<PinY Unit="MM">4.848798532394114</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="13" UniqueID="{EF15994D-D4E1-4887-B16A-6DF436E39125}" Name="Dynamic connector.13" NameU="Dynamic connector.13" Master="4">
+					<XForm>
+						<PinX Unit="MM">8.839074682978650</PinX>
+						<PinY Unit="MM">6.429439310558577</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{C7BF2E79-91AB-4606-9705-082D94ED8106}" Name="Circle" NameU="Circle" Master="6">
+					<Text>User</Text>
+					<XForm>
+						<PinX Unit="MM">10.223425074232765</PinX>
+						<PinY Unit="MM">1.310752096747192</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="15" UniqueID="{5EB36766-EFE3-4679-837D-EF7687A49F5E}" Name="Dynamic connector.15" NameU="Dynamic connector.15" Master="4">
+					<XForm>
+						<PinX Unit="MM">7.388151519302140</PinX>
+						<PinY Unit="MM">1.310752096747192</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="16" UniqueID="{2B90F820-15E8-4342-8569-24C51578891D}" Name="Dynamic connector.16" NameU="Dynamic connector.16" Master="4">
+					<XForm>
+						<PinX Unit="MM">10.223425074232765</PinX>
+						<PinY Unit="MM">3.026235400529878</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>
