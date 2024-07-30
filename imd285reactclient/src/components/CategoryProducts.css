@@ -1,0 +1,39 @@
+/* CategoryProducts.css */
+
+.productsChoiceLabel {
+    display: block;
+    width: 100%;
+    padding: 0px 3px;
+    margin-bottom: 8px;
+    float: right;
+    clear: both;
+    background-color: red;
+    text-align: right;
+    direction: rtl;
+}
+
+ul {
+    display: block;
+    width: 30%;
+    padding: 0px;
+    margin-bottom: 16px;
+    float: right;
+    direction: rtl;
+}
+
+li {
+    display: block;
+    width: 90%;
+    margin: 5px 12px 5px 12px;
+    float: right;
+    clear: both;
+    text-align: right;
+    direction: rtl;
+}
+
+.contextButton {
+    width: 30px;
+    margin: 0px 3px;
+    float: left;
+    direction: rtl;
+}

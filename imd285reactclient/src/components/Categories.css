@@ -1,0 +1,17 @@
+/* Categories.css */
+
+.categoryChoiceLabel {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    float: right;
+    clear: both;
+    background-color: red;
+    direction: rtl;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    direction: rtl;
+}

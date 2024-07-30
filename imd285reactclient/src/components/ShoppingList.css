@@ -1,0 +1,35 @@
+/* ShoppingList.css */
+
+.shopping-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 16px;
+    direction: rtl;
+}
+
+.category-column {
+    flex: 1;
+    max-width: 150px;
+    min-width: 100px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    direction: rtl;
+}
+
+    .category-column h3 {
+        margin-top: 0;
+    }
+
+    .category-column ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .category-column li {
+        margin: 4px 0;
+    }

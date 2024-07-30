@@ -1,0 +1,25 @@
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Passw0rd"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+
+  webapi:
+    build:
+      context: .
+      dockerfile: IMD285WebAPI/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__Imd285DbConStr=Server=sql-server;Database=IMD285Database;User Id=sa;Password=YourStrong!Passw0rd;Persist Security Info=False;TrustServerCertificate=true;
+    ports:
+      - "5000:80"
+    depends_on:
+      - sql-server
+
+volumes:
+  sqlserverdata:

@@ -1,0 +1,30 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+.top-section {
+    display: flex;
+    flex: 2;
+}
+
+.left-panel {
+    flex: 3;
+    border: 1px solid red; /* For visualization */
+}
+
+.right-panel {
+    flex: 1;
+    border: 1px solid red; /* For visualization */
+}
+
+.middle-section {
+    flex: 1;
+    border: 1px solid red; /* For visualization */
+}
+
+.bottom-section {
+    flex: 1;
+    border: 1px solid red; /* For visualization */
+}
